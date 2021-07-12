@@ -1,0 +1,64 @@
+{% include "header.html" %}
+<div class="parallax hero-image">
+  <div class="hero-text">
+    <h1>Blades Lawn Care</h1>
+    <p>Calgary's only pay what you want lawn mowing service</p>
+    <a href="{{ url_for('schedule') }}"><button class="btn btn-light btn-md schedule-button" role="button">Schedule a Cut</button></a>
+  </div>
+</div>
+
+<br>
+<br><br><br><br>
+<div class="container">
+  <i class="fas fa-credit-card fa-3x"></i>
+  <br>
+  <br>
+<h3>Pay What you Want - Everytime</h3>
+  <h6>That's right, <b><em>you</em></b> set the price after each cut, even if that means you want it for free.  We accept cash, credit, cheque, and google pay.</h6>
+  <br>
+  <br>
+  <i class="far fa-calendar-alt fa-3x"></i>
+  <br>
+  <br>
+  <h3>Easily Schedule Whenever you Want</h3>
+  <h6>Our online booking tool let's you see which dates are available.  Time slots are open 7 days a week.</h6>
+    <br>
+  <br>
+  <br>
+  <i class="far fa-question-circle fa-3x"></i>
+  <br>
+  <br>
+  <h3>Have Questions?</h3>
+  <h6>We want to hear from you.  Check our <a href="{{ url_for('contact') }}">contact</a> page to get in touch.</h6>
+</div>
+<br><br><br><br>
+
+
+<div class="actionable-card">
+  <div class="row">
+    <div class=" card-container col-sm-6">
+      <div class="card border-dark mb-3 h-100">
+        <div class="card-body">
+          <h5 class="card-title">Schedule a Cut</h5>
+          <p class="card-text">You set the price.  Includes a full mow and edging.</p>
+          </div>
+          <a href="{{ url_for('schedule') }}" class="btn btn-dark">Schedule Now</a>
+
+
+      </div>
+    </div>
+
+    <div class="card-container col-sm-6">
+      <div class="card border-dark mb-3 h-100">
+        <div class="card-body">
+          <h5 class="card-title">Pay for a Cut</h5>
+          <p class="card-text">Looking to pay for a cut?  Perfect, just follow the link to our payment processing partner.</p>
+          </div>
+          <a target="_blank" href="https://checkout.square.site/merchant/MLAQ0TBN26F8S/checkout/N2QFJIA25U4KHOVWOKEPMWMS" class="btn btn-dark">Pay Now</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "footer.html" %}
