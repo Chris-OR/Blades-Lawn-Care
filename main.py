@@ -82,5 +82,10 @@ def contact(*args):
     return render_template('contact.html', alert=alert, form=form)
 
 
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
+
+
 if __name__ == "__main__":
     app.run(debug=True)
